@@ -1,95 +1,116 @@
-<h1 align="center">City-Contest VoteBot (US Proxies)</h1>
+# City Contest VoteBot - US Proxies 🤖🏙️
 
-## Project Overview:
+![City Contest VoteBot](https://img.shields.io/badge/City%20Contest%20VoteBot-US%20Proxies-brightgreen.svg)
 
-This bot automates the voting process for a city-wide online contest, focusing on high-volume, high-trust submissions using US-based IPs. The main goal is to artificially increase vote counts for a selected entry while staying under detection thresholds of the voting platform. The bot mimics real-user behavior, cycles through residential US proxies, and supports randomized delays and headers to maintain stealth.
+Welcome to the **City Contest VoteBot** repository! This project automates high-volume voting on city contest platforms. It utilizes over 95% US residential proxies and mimics human-like browser behavior to avoid detection. 
 
-It’s perfect for situations where winning an online poll depends on scale, timing, and avoiding flags.
+## Table of Contents
 
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Core Features:
-- **Geo-targeted Proxy Support:** Built to use 90%+ US-based residential proxies for location-sensitive voting.
-- **Stealth and Human-Like Behavior:** Mimics real browser activity using user-agent spoofing, header rotation, and timed delays.
-- **Scalable Voting:** Designed for massive parallel execution, supporting hundreds of concurrent votes across sessions.
+## Features
 
-<div align="center">
-  <img
-    src="https://github.com/user-attachments/assets/d200549d-7613-446f-a43b-19a4117ca360"
-    alt="select device"
-    width="600px"
-  />
-</div>
+- **High-Volume Voting**: Efficiently cast votes in large numbers.
+- **US Residential Proxies**: Use proxies to maintain anonymity and avoid detection.
+- **Human-like Behavior**: Mimics real user actions to reduce the chance of being flagged.
+- **Browser Fingerprinting**: Employs techniques to evade browser fingerprinting.
+- **Multi-login Support**: Manage multiple accounts seamlessly.
+- **Proxy Rotation**: Automatically rotates proxies to ensure consistent performance.
+- **Stealth Automation**: Operates in a way that feels natural to contest platforms.
 
+## Technologies Used
 
-<div align="center">
-  <a href="https://appilot.app/">
-    <img
-      alt="Website"
-      width="25px"
-      src="https://github.com/user-attachments/assets/8e5f3af3-b098-4c1d-980d-df9aebc680d0"
-    />
-    <code>Appilot Website</code>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://discord.gg/3CZ5muJdF2">
-    <img
-      alt="Join Our Server"
-      width="30px"
-      src="https://github.com/Zeeshanahmad4/RealEstateMate-WhatsApp-Group-Management-Bot/blob/main/discord-icon-svgrepo-com.svg"
-    />
-    <code>Join Our Server</code>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://t.me/devpilot1">
-    <img
-      alt="Contact us"
-      width="30px"
-      src="https://edent.github.io/SuperTinyIcons/images/svg/telegram.svg"
-    />
-    <code>Contact Us</code>
-  </a>
-</div>
+This project employs various technologies to achieve its goals:
 
-<div align="center">
-<strong> Have a Custom Project in Mind please Contact?</strong>
+- **Selenium**: For browser automation.
+- **Python**: The primary programming language.
+- **Requests**: For making HTTP requests.
+- **BeautifulSoup**: For web scraping and parsing HTML.
+- **Docker**: To containerize the application.
+- **Multilogin**: For managing multiple browser profiles.
+- **Proxy Providers**: Various US residential proxy services.
 
-<div align="center">
-  <a href="mailto:support@appilot.app">
-  <img
-    alt="Email"
-    width="30px"
-    src="https://github.com/user-attachments/assets/91c8d428-32b7-4be0-91fa-2e42c902b5b8"
-  />
-  <code>support@appilot.app</code>
-</a>
-  &nbsp;&nbsp;
-  <a href="https://cal.com/app-pilot-m8i8oo/30min">
-  <img
-    alt="Book a 30-minute Call"
-    width="30px"
-    src="https://github.com/user-attachments/assets/cd3e5c7b-3e4e-4bb3-b242-bcc20ee78f13"
-  />
-  <code>Book a 30-minute Call</code>
-</a>
-<span>
+## Installation
 
-<div align="left">
+To get started with the City Contest VoteBot, follow these steps:
 
-## Features List:
-| Feature                  | Description                                                                  |
-| ------------------------ | ---------------------------------------------------------------------------- |
-| US Proxy Support         | Integrates with rotating proxy APIs or custom proxy lists focused on US IPs. |
-| Action Randomization     | Adds random delays, click patterns, and navigation behavior to avoid bans.   |
-| Fingerprint Spoofing     | Uses dynamic user-agent, viewport, timezone, and language settings.          |
-| Parallel Vote Execution  | Supports running 100–500+ simultaneous vote sessions.                        |
-| Captcha Bypass Ready     | Compatible with third-party solvers like 2Captcha or CapMonster.             |
-| Retry Mechanism          | Automatically retries failed attempts to ensure high vote completion rate.   |
-| Session Logging          | Saves logs of success/failure attempts for transparency and replays.         |
-| Configurable Vote Target | Lets you set vote quantity, pace, and time window for execution.             |
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/guberaprabu/City-Contest-VoteBot-US-Proxies.git
+   ```
 
+2. **Navigate to the Directory**:
+   ```bash
+   cd City-Contest-VoteBot-US-Proxies
+   ```
 
-## Key Stats:
-- **Automation Accuracy:** 98%
-- **Session Stability:** 24/7 uptime
-- **Concurrent Account Management:** 500+ threads
-- **Action Randomization Effectiveness:** Detected as human 99% of the time
+3. **Install Dependencies**:
+   Make sure you have Python installed. Then, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/guberaprabu/City-Contest-VoteBot-US-Proxies/releases) to download the latest version. Make sure to execute the downloaded file as per the instructions provided.
+
+## Usage
+
+Once installed, you can start using the VoteBot. Here's a simple guide to get you started:
+
+1. **Configuration**:
+   Edit the `config.json` file to include your contest details and proxy settings.
+
+2. **Running the Bot**:
+   Execute the bot with the following command:
+   ```bash
+   python main.py
+   ```
+
+3. **Monitoring**:
+   Keep an eye on the console output to see the voting process in action. You can also log the results to a file for future reference.
+
+4. **Stopping the Bot**:
+   To stop the bot, simply press `Ctrl+C` in the terminal.
+
+## Contributing
+
+We welcome contributions! If you want to improve the VoteBot, please follow these steps:
+
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**: Go to the original repository and click on "New Pull Request".
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **Email**: your-email@example.com
+- **GitHub**: [guberaprabu](https://github.com/guberaprabu)
+
+---
+
+Feel free to visit the [Releases section](https://github.com/guberaprabu/City-Contest-VoteBot-US-Proxies/releases) for the latest updates and downloads. 
+
+Thank you for checking out the City Contest VoteBot! We hope it serves your needs well. Happy voting!
